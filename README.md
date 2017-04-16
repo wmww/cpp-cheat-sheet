@@ -141,6 +141,10 @@ A namespace is a number of variables and functions that are grouped under a spec
 ## Examples
 
 ```
+#include <iostream>
+using std::cout;
+using std::endl;
+
 int sumWithTen(int a, int b);
 
 int main(int argc, char** argv)
