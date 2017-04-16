@@ -78,35 +78,35 @@ A string is a list of characters. A string can be 0 characters long all the way 
 ### Includeing them
 
 To use strings in your program put this at the top:
-%%%
+```
 #include <string>
 using std::string;
-%%%
+```
 And then, just make a variable of type string.
 
 ### string literals
 
 A string literal is simply a number of characters surounded by quotes. You can use a string literal to set a string, or print it out directly. Here is an example:
-%%%
+```
 string myString="hello world";
 cout << myString << "!" << endl;
-%%%
+```
 
 ### concatination
 
-You can combine two strings with the %+% operator. This is called concatination. For example, the following will print "hello world!"
-%%%
+You can combine two strings with the `+` operator. This is called concatination. For example, the following will print "hello world!"
+```
 string a="hello"
 string b="world"
 string c=a+" "+b;
 cout << c+"!" << endl;
-%%%
+```
 
 Note: concatinating only string literals doesn't work. At least one of the strings must be a string variable.
 
 ### converting numbers to strings
 
-To convert a number to a string, all you need to do is put %using std::to_string% below where you include string, and then write %to_string(your_number)%. You can then concatinate it with others strings.
+To convert a number to a string, all you need to do is put `using std::to_string` below where you include string, and then write `to_string(your_number)`. You can then concatinate it with others strings.
 
 ## Arrays
 
@@ -114,18 +114,18 @@ There are two completely different ways to use arrays in C++. The C style has by
 
 ### Vector
 A C++ dynamically sized array is called a vector<sup>vector</sup>. To create one, do the following:
-%%%
+```
 // at the top of the file
 #include <vector>
 using std::vector;
 
 // in a function somewhere
 vector<item_type> array_name; // create an array that contains 0 elements
-%%%
+```
 
 ### common operations
 There are a number of functions you can call on a vector to do different things. Here are some of the most common ones. See the example to see exactly how they are used.
-* %push_back(item)%: append an item to the end
+* `push_back(item)`: append an item to the end
 
 
 ## Namespaces
