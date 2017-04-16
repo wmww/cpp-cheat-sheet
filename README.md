@@ -1,3 +1,7 @@
+# C++ Cheat Sheet
+
+I was trying to teach someone C++, and realized I was explaining the same things over and over again, so I wrote this cheat sheet. It is by no means camplete, but it may still be usefull.
+
 ## Comments
 ```
 // single line comment
@@ -113,7 +117,8 @@ To convert a number to a string, all you need to do is put `using std::to_string
 There are two completely different ways to use arrays in C++. The C style has by far the simplest syntax, but it has the huge limitation of needing a size specified at compile time. Using the C++ way, the size can change as the program runs, and as such it is what I recomend almost always and it is the only style I will show here.
 
 ### Vector
-A C++ dynamically sized array is called a vector<sup>vector</sup>. To create one, do the following:
+
+A C++ dynamically sized array is called a vector<sup>3</sup>. To create one, do the following:
 ```
 // at the top of the file
 #include <vector>
@@ -124,6 +129,7 @@ vector<item_type> array_name; // create an array that contains 0 elements
 ```
 
 ### common operations
+
 There are a number of functions you can call on a vector to do different things. Here are some of the most common ones. See the example to see exactly how they are used.
 * `push_back(item)`: append an item to the end
 
@@ -132,7 +138,7 @@ There are a number of functions you can call on a vector to do different things.
 
 A namespace is a number of variables and functions that are grouped under a specific name. The most common namespace you will have to use is the standard namespace, called `std`. To use something in a namespace, write `namespace_name::thing_in_namespace`. For example, to print something you use `std::cout`. Writing `std::` everywhere can get a bit agrivating though, so instead you can put `using namespace std;` at the top of the file and never have to use `std::`. The problem with that You may accedentally name something of your own the same as something in the standard library, thus causing a namespace collision. A good compromise is to make the `std::` implicit on only the specific things you need to use a lot. To do this write `using namespace_name::thing_in_namespace;`. This is what I do in most of my examples.
 
-# Examples
+## Examples
 
 ```
 int sumWithTen(int a, int b);
@@ -156,4 +162,4 @@ int sumWithTen(int a, int b)
 
 <sup>2</sup> The line `using std::cout;` has to do with namespaces. There are a few alternitives, but I think this style is best.
 
-<sup>vector</sup> Please see my oppinion on the name 'vector' here: [](bit.ly/2hAVet7)
+<sup>3</sup> Please see my oppinion on the name 'vector' [here](https://www.facebook.com/william01110111/posts/1780112305588121)
